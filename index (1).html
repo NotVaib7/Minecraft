@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Universe</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background: url('https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #00ff00;
+            text-shadow: 2px 2px 5px #000;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #00ff00;
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px #000;
+        }
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature-box {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .feature-box:hover {
+            transform: scale(1.05);
+        }
+        .feature-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .feature-box p {
+            font-size: 1em;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Button */
+        .btn {
+            display: inline-block;
+            background-color: #00ff00;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #fff;
+        }
+        /* Animations */
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #00ff00; }
+            50% { box-shadow: 0 0 20px #00ff00; }
+            100% { box-shadow: 0 0 5px #00ff00; }
+        }
+        header h1, .btn {
+            animation: glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minecraft Universe</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Minecraft</h2>
+        <p>Minecraft is an open-world sandbox game where your creativity is your only limit! Build incredible structures, explore vast biomes, and survive against dangerous mobs in a pixelated world like no other.</p>
+        <a href="https://www.minecraft.net" target="_blank" class="btn">Play Minecraft Now</a>
+    </section>
+    <section id="features">
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Creative Mode</h3>
+                <p>Unleash your imagination and build anything from simple homes to massive cities without any limits!</p>
+            </div>
+            <div class="feature-box">
+                <h3>Survival Mode</h3>
+                <p>Gather resources, craft tools, and survive against mobs like Creepers, Zombies, and Endermen.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Multiplayer</h3>
+                <p>Join friends or play with millions worldwide in multiplayer servers and mini-games.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Infinite Worlds</h3>
+                <p>Explore endless biomes like deserts, jungles, snowy mountains, and even the Nether and End!</p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Explore the amazing creations of Minecraft players worldwide.</p>
+        <div class="features">
+            <img src="https://micdoodle8.com/wp-content/uploads/2023/06/Netherite-is-Harder-to-Use.png" alt="Minecraft Creation" width="300">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.r_kOGqM3Ta_QthoUGKTl1QHaEf&pid=Api&P=0&h=180" alt="Minecraft Biome" width="300">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.r7k2rh6K_dNjEvEiH8DLDgHaEK&pid=Api&P=0&h=180" alt="Minecraft Village" width="300">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions or want to share your feedback? Reach out to us!</p>
+        <p>Email: vaibhavpradhan2012@gmail.com</p>
+        <p>Follow us on social media for updates and more!</p>
+        <p>Instagram: Vaib7_Futbolista / baller_vaib </p>
+        <p>YouTube: Vaib Plays / @VaibPlay7A</p>
+    </section>
+    <footer>
+        <p>© 2024 Minecraft Universe | All Rights Reserved | Made by Vaib</p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>
